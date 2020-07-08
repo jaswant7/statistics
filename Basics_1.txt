@@ -2,7 +2,27 @@ Q-Q Plot:
  quantile: lines divide data into equally sized group. ex, 0.75 quantile line- 3 quarters of the points are less than it.
 step1: give each point its own quantile
 step2: normal curve or any other distribution.
-step3: add the same no. of quantiles to the curve as you created for the data. For the normal curve, "equal sized groups" means that there is equal probability of observing a value within each group.
+step3: add the same no. of quantiles to the curve as you created for the data. For the normal curve, "equal sized groups" means that there is equal probability 
+       of observing a value within each group.
 step4: plot q-q graph. Data quantiles vs normal quantiles.
 
-Importance check for common distribution: assumption of a common distribution is justified or not when there are 2 data samples. If two samples do differ, it is also useful to gain some understanding of the differences. 
+Importance check for common distribution: assumption of a common distribution is justified or not when there are 2 data samples. If two samples do differ, it 
+is also useful to gain some understanding of the differences. 
+--------------------------------------------------------------------------------
+
+Correlation coefficient: used to measure how strong a relationship is between data.
+One of the most commonly used formulas in stats is Pearson's correlation coefficient formula. Two other formulas that are commonly used are sample and population
+ correlation coefficient.
+The pearson is not able to tell the difference between dependent and independent variables. 
+--------------------------------------------------------------------------------
+
+Outlier: It can be seen as a data point that is vey different from other observations. It can be caused while measuring. They can reduce the accuracy of a model 
+therfore it's important to remove them from the dataset.
+Z-score can be used to detect outliers. But for this data must be normally distributed. 
+IQR: IQR is difference between 3rd and 1st quartile. Identify if a point is an outlier if it is less than q1-1.5*IQR or greater than q3+1.5*IQR. 
+Other methods include DBScan clustering, Isolation Forests, and Robust Random Cut Forests.
+--------------------------------------------------------------------------------
+
+Central Limit theorem: It states that the sampling distribution of the sample mean approaches a normal distribution as the sample size gets large no matter what 
+the shape of the population distribution. Used in hypothesis testing and calculating confidence intervals.
+--------------------------------------------------------------------------------
